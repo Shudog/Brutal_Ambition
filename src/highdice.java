@@ -5,13 +5,13 @@ public class highdice {
         double p1r,p2r,d1r,d2r;
         int ptotal,dtotal;
         p1r = Math.random();
-        p2r = Math.random()  ;
-        d1r = Math.random()   ;
+        p2r = Math.random();
+        d1r = Math.random();
         d2r = Math.random();
         p1r *= 6;
-        p2r *= 6 ;
-        d1r *= 6   ;
-        d2r *= 6  ;
+        p2r *= 6;
+        d1r *= 6;
+        d2r *= 6;
         int p1 = (int) p1r;
         int p2 = (int) p2r;
         int d1 = (int) d1r;
@@ -20,8 +20,8 @@ public class highdice {
         p2++;
         d1++;
         d2++;
-        ptotal = p1+p2               ;
-        dtotal = d1+d2               ;
+        ptotal = p1+p2;
+        dtotal = d1+d2;
 
         //Print out the scores...
         System.out.print("Player: ");
@@ -48,6 +48,5 @@ public class highdice {
         System.out.print("Braden is 14 years old and lives in Ontario, Canada.");
         System.out.print("Thanks go to the author of Brewing Java for his tutorial and to");
         System.out.println(" Planet Source Code.com for hosting it.");
-
     }
 }
