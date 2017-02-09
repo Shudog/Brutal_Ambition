@@ -3,8 +3,7 @@ import java.io.File;
 /**
  * Created by Jasper on 2/7/2017.
  */
-public class Player
-{
+public class Player {
     private String name;
     private File statsFile;
     private int winRate;
@@ -14,8 +13,7 @@ public class Player
     private int totalPoints;
     private int currentPoints;
 
-    public Player()
-    {
+    public Player() {
         this.name = "";
         this.statsFile = null;
         this.winRate = 0;
@@ -24,8 +22,7 @@ public class Player
         this.currentPoints = 0;
     }
 
-    public Player(String name)
-    {
+    public Player(String name) {
         this.name = name;
         //Place holder for file declaration;
         this.winRate = 0;
@@ -36,75 +33,62 @@ public class Player
 
 
     //Getters and Setters
-    public void changePlayerName(String newName)
-    {
+    public void changePlayerName(String newName) {
         this.name = newName;
         File tempFile = new File(newName);
         this.statsFile.renameTo(tempFile);
         tempFile.delete();
     }
 
-    public void playerRollsDice(int roll)
-    {
+    public void playerRollsDice(int roll) {
         this.currentPoints = this.currentPoints + roll;
         this.totalPoints = totalPoints + roll;
     }
 
-    public void playerPlaysNewGame()
-    {
+    public void playerPlaysNewGame() {
         this.currentPoints = 0;
         this.gamesPlayed = this.gamesPlayed + 1;
         this.winRate = this.getPlayerWins() / this.getGamesPlayed();
 
     }
 
-    public void playerWins()
-    {
+    public void playerWins() {
         this.wins++;
     }
 
-    public void playerLoses()
-    {
+    public void playerLoses() {
         this.losses++;
     }
 
-    public int getPlayerWins()
-    {
+    public int getPlayerWins() {
         return this.wins;
     }
 
-    public int getLosses()
-    {
+    public int getLosses() {
         return this.losses;
     }
 
-    public String getPlayerName()
-    {
+    public String getPlayerName() {
         return this.name;
     }
 
-    public int getWinRate()
-    {
+    public int getWinRate() {
         return this.winRate;
     }
 
-    public int getGamesPlayed()
-    {
+    public int getGamesPlayed() {
         return this.gamesPlayed;
     }
 
-    public int getTotalPoints()
-    {
+    public int getTotalPoints() {
         return this.totalPoints;
     }
 
-    public int getCurrentPoints()
-    {
+    public int getCurrentPoints() {
         return this.currentPoints;
     }
 
-    public String getPlayerFileLocation()
-    {
+    public String getPlayerFileLocation() {
         return this.statsFile.getAbsolutePath();
     }
 }
