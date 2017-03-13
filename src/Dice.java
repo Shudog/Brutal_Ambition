@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -8,10 +9,13 @@ import java.util.ArrayList;
 /**
  * Created by NS12379 on 3/13/2017.
  */
-public class Dice {
+public class Dice extends JPanel{
     private ArrayList<Player> players;
     private Player currentPlayer;
     private Integer playerIndex;
+
+    private JDialog dialog;
+    private newPlayerForm dialogPanel = new newPlayerForm();
 
     private JPanel rootPanel;
     private JButton previousPlayerButton;
@@ -80,10 +84,6 @@ public class Dice {
                 }
             }
         });
-        pointsInput.addKeyListener(new KeyAdapter() {
-        });
-        pointsInput.addKeyListener(new KeyAdapter() {
-        });
         pointsInput.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -99,18 +99,7 @@ public class Dice {
         addPlayerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-//                http://stackoverflow.com/questions/7017063/passing-values-between-jframes
-
-                if (dialog)
-
-                NewPlayer playerForm = new NewPlayer();
-                playerForm.setBoard();
-//                rootPanel.setVisible(false);
-                while(playerForm.getPlayer() == null)
-                    break;
-                Player newPlayer = playerForm.getPlayer();
-                playerForm.close();
-                players.add(newPlayer);
+                openTableAction();
             }
         });
     }
@@ -128,6 +117,12 @@ public class Dice {
         currentPlayer = players.get(0);
     }
 
+    public void addPlayer(Player newPlayer) {
+        players.add(newPlayer);
+        playerIndex = players.size() - 1;
+        setCurrent();
+    }
+
     public void addPoints(Integer points) {
         currentPlayer.addPoints(points);
         playerPoints.setText(String.valueOf(currentPlayer.getCurrentPoints()));
@@ -139,5 +134,24 @@ public class Dice {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+    }
+
+    public void openTableAction() {
+        rootPanel.setVisible(false);
+        if (dialog == null) {
+            Window win = SwingUtilities.getWindowAncestor(this);
+            if (win == null) {
+                dialog = new JDialog(win, "My Dialog",
+                        Dialog.ModalityType.APPLICATION_MODAL);
+                dialog.getContentPane().add(dialogPanel);
+                dialog.pack();
+                dialog.setLocationRelativeTo(null);
+            }
+        }
+        dialog.setVisible(true); // here the modal dialog takes over
+        playerPoints.setText(dialogPanel.getFieldText());
+        Player newPlayer = new Player(dialogPanel.getFieldText());
+        addPlayer(newPlayer);
+        rootPanel.setVisible(true);
     }
 }
