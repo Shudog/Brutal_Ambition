@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 /**
@@ -16,6 +18,11 @@ public class Dice {
     private JButton nextPlayerButton;
     private JButton setPlayersButton;
     private JLabel playerName;
+    private JLabel playerPoints;
+    private JLabel pointsText;
+    private JTextField pointsInput;
+    private JButton addPointsButton;
+    private JButton addPlayerButton;
 
     public static void main(String[] args) {
         Dice game = new Dice();
@@ -48,8 +55,7 @@ public class Dice {
                 playerIndex--;
                 if(playerIndex < 0)
                     playerIndex = players.size() - 1;
-                currentPlayer = players.get(playerIndex);
-                playerName.setText(currentPlayer.getPlayerName());
+                setCurrent();
             }
         });
         nextPlayerButton.addActionListener(new ActionListener() {
@@ -59,16 +65,72 @@ public class Dice {
                 playerIndex++;
                 if(playerIndex >= players.size())
                     playerIndex = 0;
-                currentPlayer = players.get(playerIndex);
-                playerName.setText(currentPlayer.getPlayerName());
+                setCurrent();
             }
         });
+        pointsInput.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                String ch = String.valueOf(e.getKeyChar());
+                try {// if is number
+                    Integer.parseInt(ch);
+                } catch (NumberFormatException d) {
+                    // else then do blah
+                    e.consume();
+                }
+            }
+        });
+        pointsInput.addKeyListener(new KeyAdapter() {
+        });
+        pointsInput.addKeyListener(new KeyAdapter() {
+        });
+        pointsInput.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                addPoints(Integer.parseInt(pointsInput.getText()));
+            }
+        });
+        addPointsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                addPoints(Integer.parseInt(pointsInput.getText()));
+            }
+        });
+        addPlayerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+//                http://stackoverflow.com/questions/7017063/passing-values-between-jframes
+
+                if (dialog)
+
+                NewPlayer playerForm = new NewPlayer();
+                playerForm.setBoard();
+//                rootPanel.setVisible(false);
+                while(playerForm.getPlayer() == null)
+                    break;
+                Player newPlayer = playerForm.getPlayer();
+                playerForm.close();
+                players.add(newPlayer);
+            }
+        });
+    }
+
+    public void setCurrent() {
+        currentPlayer = players.get(playerIndex);
+        playerName.setText(currentPlayer.getPlayerName());
+
+        playerPoints.setText(String.valueOf(currentPlayer.getCurrentPoints()));
     }
 
     public void addPlayers(ArrayList<Player> newPlayers) {
         players.clear();
         players.addAll(newPlayers);
         currentPlayer = players.get(0);
+    }
+
+    public void addPoints(Integer points) {
+        currentPlayer.addPoints(points);
+        playerPoints.setText(String.valueOf(currentPlayer.getCurrentPoints()));
     }
 
     public void setBoard() {

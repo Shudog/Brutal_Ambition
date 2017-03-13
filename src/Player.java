@@ -45,6 +45,11 @@ public class Player {
         this.totalPoints = totalPoints + roll;
     }
 
+    public void addPoints(int roll) {
+        this.currentPoints += roll;
+        this.totalPoints += roll;
+    }
+
     public void playerPlaysNewGame() {
         this.currentPoints = 0;
         this.gamesPlayed = this.gamesPlayed + 1;
