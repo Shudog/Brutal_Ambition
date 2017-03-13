@@ -17,11 +17,11 @@ public class highdice {
         Vector<String> names = new Vector<>();
         for(Player i : gamePlayers) names.addElement(i.getPlayerName());
         //end pre stuff
-
-        App form = new App();
-//        form.setNames(names);
-        form.setPlayers(gamePlayers);
-        form.setBoard();
+//
+//        App form = new App();
+////        form.setNames(names);
+//        form.setPlayers(gamePlayers);
+//        form.setBoard();
 
 
 
