@@ -55,21 +55,13 @@ public class Dice extends JPanel{
         previousPlayerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                players.set(playerIndex, currentPlayer);
-                playerIndex--;
-                if(playerIndex < 0)
-                    playerIndex = players.size() - 1;
-                setCurrent();
+                previousPlayer();
             }
         });
         nextPlayerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                players.set(playerIndex, currentPlayer);
-                playerIndex++;
-                if(playerIndex >= players.size())
-                    playerIndex = 0;
-                setCurrent();
+                nextPlayer();
             }
         });
         pointsInput.addKeyListener(new KeyAdapter() {
@@ -111,6 +103,13 @@ public class Dice extends JPanel{
         playerPoints.setText(String.valueOf(currentPlayer.getCurrentPoints()));
     }
 
+    public void removeAll() {
+        currentPlayer = null;
+        players.clear();
+        playerName.setText("None");
+        playerPoints.setText("None");
+    }
+
     public void addPlayers(ArrayList<Player> newPlayers) {
         players.clear();
         players.addAll(newPlayers);
@@ -120,6 +119,38 @@ public class Dice extends JPanel{
     public void addPlayer(Player newPlayer) {
         players.add(newPlayer);
         playerIndex = players.size() - 1;
+        setCurrent();
+    }
+
+    public ArrayList<Player> getPlayers() {
+        return players;
+    }
+
+    public Player getPlayer(int i) {
+        return players.get(i);
+    }
+
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
+    public Integer getCurrentIndex() {
+        return playerIndex;
+    }
+
+    public void nextPlayer() {
+        players.set(playerIndex, currentPlayer);
+        playerIndex++;
+        if(playerIndex >= players.size())
+            playerIndex = 0;
+        setCurrent();
+    }
+
+    public void previousPlayer() {
+        players.set(playerIndex, currentPlayer);
+        playerIndex--;
+        if(playerIndex < 0)
+            playerIndex = players.size() - 1;
         setCurrent();
     }
 
