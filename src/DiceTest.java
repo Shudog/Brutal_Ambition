@@ -95,6 +95,12 @@ public class DiceTest {
     }
 
     @org.junit.Test
+    public void rollDice() throws Exception {
+        game.rollDice();
+        assertTrue(game.getCurrentPlayer().getCurrentPoints() > 1);
+    }
+
+    @org.junit.Test
     public void previousPlayer() throws Exception {
         ArrayList<Player> expected = game.getPlayers();
         game.previousPlayer();

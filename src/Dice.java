@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by NS12379 on 3/13/2017.
@@ -27,6 +28,8 @@ public class Dice extends JPanel{
     private JTextField pointsInput;
     private JButton addPointsButton;
     private JButton addPlayerButton;
+    private JButton rollDiceButton;
+    private JLabel rollPoints;
 
     public static void main(String[] args) {
         Dice game = new Dice();
@@ -94,6 +97,12 @@ public class Dice extends JPanel{
                 openTableAction();
             }
         });
+        rollDiceButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                rollDice();
+            }
+        });
     }
 
     public void setCurrent() {
@@ -114,6 +123,7 @@ public class Dice extends JPanel{
         players.clear();
         players.addAll(newPlayers);
         currentPlayer = players.get(0);
+        setCurrent();
     }
 
     public void addPlayer(Player newPlayer) {
@@ -157,6 +167,14 @@ public class Dice extends JPanel{
     public void addPoints(Integer points) {
         currentPlayer.addPoints(points);
         playerPoints.setText(String.valueOf(currentPlayer.getCurrentPoints()));
+    }
+
+    public void rollDice() {
+        int diceTotal = 0;
+        for(int i = 0; i < 5; i++)
+            diceTotal += ThreadLocalRandom.current().nextInt(1, 6 + 1);
+        addPoints(diceTotal);
+        rollPoints.setText(String.valueOf(diceTotal));
     }
 
     public void setBoard() {
