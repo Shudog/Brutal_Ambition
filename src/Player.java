@@ -6,7 +6,7 @@ import java.io.File;
 public class Player {
     private String name;
     private File statsFile;
-    private int winRate;
+    private double winRate;
     private int wins;
     private int losses;
     private int gamesPlayed;
@@ -34,7 +34,9 @@ public class Player {
 
     //Getters and Setters
     public void changePlayerName(String newName) {
+        System.out.println("Coming in: " + newName);
         this.name = newName;
+        System.out.println("Result: " + this.name);
         File tempFile = new File(newName);
         this.statsFile.renameTo(tempFile);
         tempFile.delete();
@@ -53,7 +55,9 @@ public class Player {
     public void playerPlaysNewGame() {
         this.currentPoints = 0;
         this.gamesPlayed = this.gamesPlayed + 1;
-        this.winRate = this.getPlayerWins() / this.getGamesPlayed();
+        double wins = this.getPlayerWins();
+        double games = this.getGamesPlayed();
+        this.winRate = (wins/games);
 
     }
 
@@ -77,7 +81,7 @@ public class Player {
         return this.name;
     }
 
-    public int getWinRate() {
+    public double getWinRate() {
         return this.winRate;
     }
 
