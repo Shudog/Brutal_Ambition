@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * Created by NS12379 on 3/13/2017.
  */
-public class Dice extends JPanel{
+public class Dice extends BaseGui{
     private ArrayList<Player> players;
     private Player currentPlayer;
     private Integer playerIndex;
@@ -30,12 +30,6 @@ public class Dice extends JPanel{
     private JButton addPlayerButton;
     private JButton rollDiceButton;
     private JLabel rollPoints;
-
-    public static void main(String[] args) {
-        Dice game = new Dice();
-        game.setBoard();
-    }
-
 
     public Dice() {
         players = new ArrayList<>();
@@ -103,6 +97,11 @@ public class Dice extends JPanel{
                 rollDice();
             }
         });
+    }
+
+    public JPanel getRootPanel()
+    {
+        return rootPanel;
     }
 
     public void setCurrent() {
