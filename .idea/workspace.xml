@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51019ee2-29c3-4225-8f5f-2b315e51f531" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gamedata.xlsx" afterPath="$PROJECT_DIR$/gamedata.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dice.form" afterPath="$PROJECT_DIR$/src/main/java/Dice.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dice.java" afterPath="$PROJECT_DIR$/src/main/java/Dice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Player.java" afterPath="$PROJECT_DIR$/src/main/java/Player.java" />
     </list>
     <ignored path="Brutal Ambishion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,36 +29,47 @@
       <file leaf-file-name="Dice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="236" column="6" lean-forward="false" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
+            <state relative-caret-position="105">
+              <caret line="200" column="31" lean-forward="false" selection-start-line="200" selection-start-column="31" selection-end-line="200" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#650#658#0" expanded="true" />
-                <element signature="e#1605#2117#0" expanded="true" />
-                <element signature="e#1777#1785#0" expanded="true" />
-                <element signature="e#2116#2117#0" expanded="true" />
-                <element signature="e#2167#2336#0" expanded="true" />
-                <element signature="e#2277#2278#0" expanded="false" />
-                <element signature="e#2325#2326#0" expanded="false" />
-                <element signature="e#2335#2336#0" expanded="true" />
-                <element signature="e#2382#2547#0" expanded="true" />
-                <element signature="e#2546#2547#0" expanded="true" />
-                <element signature="e#2585#2979#0" expanded="true" />
-                <element signature="e#2978#2979#0" expanded="true" />
-                <element signature="e#3130#3131#0" expanded="false" />
-                <element signature="e#3212#3213#0" expanded="false" />
-                <element signature="e#3378#3379#0" expanded="false" />
-                <element signature="e#3460#3461#0" expanded="false" />
-                <element signature="e#3516#3686#0" expanded="true" />
-                <element signature="e#3626#3627#0" expanded="false" />
-                <element signature="e#3675#3676#0" expanded="false" />
-                <element signature="e#3685#3686#0" expanded="true" />
-                <element signature="e#3730#3893#0" expanded="true" />
-                <element signature="e#3840#3841#0" expanded="false" />
-                <element signature="e#3882#3883#0" expanded="false" />
-                <element signature="e#3892#3893#0" expanded="true" />
-                <marker date="1490891109000" expanded="true" signature="141:508" ph="..." />
+                <element signature="e#1622#2134#0" expanded="true" />
+                <element signature="e#1794#1802#0" expanded="true" />
+                <element signature="e#2133#2134#0" expanded="true" />
+                <element signature="e#2184#2353#0" expanded="true" />
+                <element signature="e#2294#2295#0" expanded="false" />
+                <element signature="e#2342#2343#0" expanded="false" />
+                <element signature="e#2352#2353#0" expanded="true" />
+                <element signature="e#2399#2564#0" expanded="true" />
+                <element signature="e#2563#2564#0" expanded="true" />
+                <element signature="e#2602#2996#0" expanded="true" />
+                <element signature="e#2995#2996#0" expanded="true" />
+                <element signature="e#3147#3148#0" expanded="false" />
+                <element signature="e#3229#3230#0" expanded="false" />
+                <element signature="e#3395#3396#0" expanded="false" />
+                <element signature="e#3477#3478#0" expanded="false" />
+                <element signature="e#3533#3703#0" expanded="true" />
+                <element signature="e#3643#3644#0" expanded="false" />
+                <element signature="e#3692#3693#0" expanded="false" />
+                <element signature="e#3702#3703#0" expanded="true" />
+                <element signature="e#3747#3910#0" expanded="true" />
+                <element signature="e#3857#3858#0" expanded="false" />
+                <element signature="e#3899#3900#0" expanded="false" />
+                <element signature="e#3909#3910#0" expanded="true" />
+                <element signature="e#7296#7304#0" expanded="true" />
+                <marker date="1490892190000" expanded="true" signature="141:508" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/main/java/DiceTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dice.form" />
         <option value="$PROJECT_DIR$/src/main/java/Dice.java" />
       </list>
     </option>
@@ -753,24 +764,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Dice.java</url>
-          <line>226</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Dice.java</url>
-          <line>227</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Dice.java</url>
-          <line>228</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Dice.java</url>
           <line>123</line>
           <properties />
           <option name="timeStamp" value="26" />
@@ -787,14 +780,8 @@
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Dice.java</url>
-          <line>201</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -808,41 +795,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#650#658#0" expanded="true" />
-            <element signature="e#1605#2117#0" expanded="true" />
-            <element signature="e#1777#1785#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2167#2336#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="false" />
-            <element signature="e#2325#2326#0" expanded="false" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2382#2547#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2585#2979#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3130#3131#0" expanded="false" />
-            <element signature="e#3212#3213#0" expanded="false" />
-            <element signature="e#3378#3379#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3516#3686#0" expanded="true" />
-            <element signature="e#3626#3627#0" expanded="false" />
-            <element signature="e#3675#3676#0" expanded="false" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3730#3893#0" expanded="true" />
-            <element signature="e#3840#3841#0" expanded="false" />
-            <element signature="e#3882#3883#0" expanded="false" />
-            <element signature="e#3892#3893#0" expanded="true" />
-            <marker date="1490891109000" expanded="true" signature="141:508" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NewPlayer.java" />
     <entry file="file://$PROJECT_DIR$/src/NewPlayer.form" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Dice.form">
@@ -875,30 +827,31 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#650#658#0" expanded="true" />
-            <element signature="e#1605#2117#0" expanded="true" />
-            <element signature="e#1777#1785#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2167#2336#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="false" />
-            <element signature="e#2325#2326#0" expanded="false" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2382#2547#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2585#2979#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3130#3131#0" expanded="false" />
-            <element signature="e#3212#3213#0" expanded="false" />
-            <element signature="e#3378#3379#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3516#3686#0" expanded="true" />
-            <element signature="e#3626#3627#0" expanded="false" />
-            <element signature="e#3675#3676#0" expanded="false" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3730#3893#0" expanded="true" />
-            <element signature="e#3840#3841#0" expanded="false" />
-            <element signature="e#3882#3883#0" expanded="false" />
-            <element signature="e#3892#3893#0" expanded="true" />
-            <marker date="1490891109000" expanded="true" signature="141:508" ph="..." />
+            <element signature="e#1622#2134#0" expanded="true" />
+            <element signature="e#1794#1802#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+            <element signature="e#2184#2353#0" expanded="true" />
+            <element signature="e#2294#2295#0" expanded="false" />
+            <element signature="e#2342#2343#0" expanded="false" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2399#2564#0" expanded="true" />
+            <element signature="e#2563#2564#0" expanded="true" />
+            <element signature="e#2602#2996#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="e#3147#3148#0" expanded="false" />
+            <element signature="e#3229#3230#0" expanded="false" />
+            <element signature="e#3395#3396#0" expanded="false" />
+            <element signature="e#3477#3478#0" expanded="false" />
+            <element signature="e#3533#3703#0" expanded="true" />
+            <element signature="e#3643#3644#0" expanded="false" />
+            <element signature="e#3692#3693#0" expanded="false" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3747#3910#0" expanded="true" />
+            <element signature="e#3857#3858#0" expanded="false" />
+            <element signature="e#3899#3900#0" expanded="false" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#7296#7304#0" expanded="true" />
+            <marker date="1490892190000" expanded="true" signature="141:508" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1111,17 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dice.form">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/poi-ooxml-3.15.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1166,37 +1108,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dice.form">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="236" column="6" lean-forward="false" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="200" column="31" lean-forward="false" selection-start-line="200" selection-start-column="31" selection-end-line="200" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#650#658#0" expanded="true" />
-            <element signature="e#1605#2117#0" expanded="true" />
-            <element signature="e#1777#1785#0" expanded="true" />
-            <element signature="e#2116#2117#0" expanded="true" />
-            <element signature="e#2167#2336#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="false" />
-            <element signature="e#2325#2326#0" expanded="false" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2382#2547#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-            <element signature="e#2585#2979#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#3130#3131#0" expanded="false" />
-            <element signature="e#3212#3213#0" expanded="false" />
-            <element signature="e#3378#3379#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3516#3686#0" expanded="true" />
-            <element signature="e#3626#3627#0" expanded="false" />
-            <element signature="e#3675#3676#0" expanded="false" />
-            <element signature="e#3685#3686#0" expanded="true" />
-            <element signature="e#3730#3893#0" expanded="true" />
-            <element signature="e#3840#3841#0" expanded="false" />
-            <element signature="e#3882#3883#0" expanded="false" />
-            <element signature="e#3892#3893#0" expanded="true" />
-            <marker date="1490891109000" expanded="true" signature="141:508" ph="..." />
+            <element signature="e#1622#2134#0" expanded="true" />
+            <element signature="e#1794#1802#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+            <element signature="e#2184#2353#0" expanded="true" />
+            <element signature="e#2294#2295#0" expanded="false" />
+            <element signature="e#2342#2343#0" expanded="false" />
+            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#2399#2564#0" expanded="true" />
+            <element signature="e#2563#2564#0" expanded="true" />
+            <element signature="e#2602#2996#0" expanded="true" />
+            <element signature="e#2995#2996#0" expanded="true" />
+            <element signature="e#3147#3148#0" expanded="false" />
+            <element signature="e#3229#3230#0" expanded="false" />
+            <element signature="e#3395#3396#0" expanded="false" />
+            <element signature="e#3477#3478#0" expanded="false" />
+            <element signature="e#3533#3703#0" expanded="true" />
+            <element signature="e#3643#3644#0" expanded="false" />
+            <element signature="e#3692#3693#0" expanded="false" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3747#3910#0" expanded="true" />
+            <element signature="e#3857#3858#0" expanded="false" />
+            <element signature="e#3899#3900#0" expanded="false" />
+            <element signature="e#3909#3910#0" expanded="true" />
+            <element signature="e#7296#7304#0" expanded="true" />
+            <marker date="1490892190000" expanded="true" signature="141:508" ph="..." />
           </folding>
         </state>
       </provider>

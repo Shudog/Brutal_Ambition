@@ -23,7 +23,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class Dice extends JPanel{
     private static ArrayList<Player> players = new ArrayList<Player>();
-    private Player currentPlayer;
+    private static Player currentPlayer;
     private Integer playerIndex;
 
     private JDialog dialog;
@@ -47,7 +47,7 @@ public class Dice extends JPanel{
 
     public static void main(String[] args) throws IOException {
         loadFile("gamedata.xlsx");
-        loadPlayers(workSheet);
+        players = loadPlayers(workSheet);
         Dice game = new Dice();
         game.setBoard();
     }
@@ -232,9 +232,9 @@ public class Dice extends JPanel{
         }
     }
 
-    public static void loadPlayers(Sheet sheet) {
+    public static ArrayList<Player> loadPlayers(Sheet sheet) {
         Row playerRow = sheet.getRow(0);
-      
+        ArrayList<Player> myplayers = new ArrayList<Player>();
         for (int i = 1; i < playerRow.getLastCellNum(); i++)
         {
             Player p = new Player(playerRow.getCell(i).getStringCellValue());
@@ -242,7 +242,9 @@ public class Dice extends JPanel{
             p.setGamesPlayed((int) sheet.getRow(2).getCell(i).getNumericCellValue());
             p.setWins((int) sheet.getRow(3).getCell(i).getNumericCellValue());
             p.setLosses((int) sheet.getRow(4).getCell(i).getNumericCellValue());
-            players.add(p);
+            myplayers.add(p);
         }
+        currentPlayer = myplayers.get(0);
+        return myplayers;
     }
 }
