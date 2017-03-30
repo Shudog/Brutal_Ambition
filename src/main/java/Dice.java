@@ -16,8 +16,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
-
-
 /**
  * Created by NS12379 on 3/13/2017.
  */
@@ -199,7 +197,8 @@ public class Dice extends JPanel{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        setCurrent();
+        playerName.setText(currentPlayer.getPlayerName());
+        playerPoints.setText(String.valueOf(currentPlayer.getCurrentPoints()));
     }
 
     public void openTableAction() {
