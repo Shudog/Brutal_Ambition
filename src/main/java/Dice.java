@@ -1,3 +1,4 @@
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -21,7 +22,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * Created by NS12379 on 3/13/2017.
  */
 public class Dice extends JPanel{
-    private ArrayList<Player> players;
+    private static ArrayList<Player> players = new ArrayList<Player>();
     private Player currentPlayer;
     private Integer playerIndex;
 
@@ -46,13 +47,13 @@ public class Dice extends JPanel{
 
     public static void main(String[] args) throws IOException {
         loadFile("gamedata.xlsx");
+        loadPlayers(workSheet);
         Dice game = new Dice();
         game.setBoard();
     }
 
 
     public Dice() {
-        players = new ArrayList<Player>();
         playerIndex = 0;
 
         setPlayersButton.addActionListener(new ActionListener() {
@@ -192,11 +193,13 @@ public class Dice extends JPanel{
     }
 
     public void setBoard() {
+
         JFrame frame = new JFrame("App");
         frame.setContentPane(new Dice().rootPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        setCurrent();
     }
 
     public void openTableAction() {
@@ -226,6 +229,20 @@ public class Dice extends JPanel{
             workSheet = workBook.getSheetAt(0);
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public static void loadPlayers(Sheet sheet) {
+        Row playerRow = sheet.getRow(0);
+      
+        for (int i = 1; i < playerRow.getLastCellNum(); i++)
+        {
+            Player p = new Player(playerRow.getCell(i).getStringCellValue());
+            p.setTotalPoints((int) sheet.getRow(1 ).getCell(i).getNumericCellValue());
+            p.setGamesPlayed((int) sheet.getRow(2).getCell(i).getNumericCellValue());
+            p.setWins((int) sheet.getRow(3).getCell(i).getNumericCellValue());
+            p.setLosses((int) sheet.getRow(4).getCell(i).getNumericCellValue());
+            players.add(p);
         }
     }
 }

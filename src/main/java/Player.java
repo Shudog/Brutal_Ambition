@@ -22,8 +22,8 @@ public class Player {
         this.currentPoints = 0;
     }
 
-    public Player(String name) {
-        this.name = name;
+    public Player(String n) {
+        name = n;
         //Place holder for file declaration;
         this.winRate = 0;
         this.gamesPlayed = 0;
@@ -59,6 +59,22 @@ public class Player {
         double games = this.getGamesPlayed();
         this.winRate = (wins/games);
 
+    }
+
+    public void setWins(int w) {
+        wins = w;
+    }
+
+    public void setLosses(int l) {
+        losses = l;
+    }
+
+    public void setGamesPlayed(int gamesPlayed) {
+        this.gamesPlayed = gamesPlayed;
+    }
+
+    public void setTotalPoints(int totalPoints) {
+        this.totalPoints = totalPoints;
     }
 
     public void playerWins() {
