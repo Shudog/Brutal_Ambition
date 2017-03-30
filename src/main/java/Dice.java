@@ -1,3 +1,6 @@
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -7,6 +10,7 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
@@ -37,9 +41,11 @@ public class Dice extends JPanel{
     private JButton rollDiceButton;
     private JLabel rollPoints;
 
+    private static XSSFWorkbook workBook;
+    private static Sheet workSheet;
 
     public static void main(String[] args) throws IOException {
-
+        loadFile("gamedata.xlsx");
         Dice game = new Dice();
         game.setBoard();
     }
@@ -210,5 +216,16 @@ public class Dice extends JPanel{
         Player newPlayer = new Player(dialogPanel.getFieldText());
         addPlayer(newPlayer);
         rootPanel.setVisible(true);
+    }
+
+    public static void loadFile(String path)
+    {
+        try {
+            FileInputStream inputStream = new FileInputStream(new File(path));
+            workBook = new XSSFWorkbook(inputStream);
+            workSheet = workBook.getSheetAt(0);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

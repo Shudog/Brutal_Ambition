@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51019ee2-29c3-4225-8f5f-2b315e51f531" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Dice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/DiceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/PlayerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/newPlayerForm$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/newPlayerForm$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/workspace/newPlayerForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Dice.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Dice.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Player.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PlayerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/newPlayerForm.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/workspace.iml" afterPath="$PROJECT_DIR$/workspace.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dice.java" afterPath="$PROJECT_DIR$/src/main/java/Dice.java" />
     </list>
     <ignored path="Brutal Ambishion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,35 +28,36 @@
       <file leaf-file-name="Dice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="225" column="47" lean-forward="false" selection-start-line="225" selection-start-column="47" selection-end-line="225" selection-end-column="47" />
               <folding>
-                <element signature="e#1299#1811#0" expanded="true" />
-                <element signature="e#1471#1479#0" expanded="true" />
-                <element signature="e#1810#1811#0" expanded="true" />
-                <element signature="e#1861#2030#0" expanded="true" />
-                <element signature="e#1971#1972#0" expanded="false" />
-                <element signature="e#2019#2020#0" expanded="false" />
-                <element signature="e#2029#2030#0" expanded="true" />
-                <element signature="e#2076#2241#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="false" />
-                <element signature="e#2230#2231#0" expanded="false" />
-                <element signature="e#2240#2241#0" expanded="true" />
-                <element signature="e#2279#2673#0" expanded="true" />
-                <element signature="e#2672#2673#0" expanded="true" />
-                <element signature="e#2824#2825#0" expanded="false" />
-                <element signature="e#2906#2907#0" expanded="false" />
-                <element signature="e#3072#3073#0" expanded="false" />
-                <element signature="e#3154#3155#0" expanded="false" />
-                <element signature="e#3210#3380#0" expanded="true" />
-                <element signature="e#3320#3321#0" expanded="false" />
-                <element signature="e#3369#3370#0" expanded="false" />
-                <element signature="e#3379#3380#0" expanded="true" />
-                <element signature="e#3424#3587#0" expanded="true" />
-                <element signature="e#3534#3535#0" expanded="false" />
-                <element signature="e#3576#3577#0" expanded="false" />
-                <element signature="e#3586#3587#0" expanded="true" />
-                <marker date="1490887889000" expanded="true" signature="7:336" ph="..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1543#2055#0" expanded="true" />
+                <element signature="e#1715#1723#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+                <element signature="e#2105#2274#0" expanded="true" />
+                <element signature="e#2215#2216#0" expanded="false" />
+                <element signature="e#2263#2264#0" expanded="false" />
+                <element signature="e#2273#2274#0" expanded="true" />
+                <element signature="e#2320#2485#0" expanded="true" />
+                <element signature="e#2430#2431#0" expanded="false" />
+                <element signature="e#2474#2475#0" expanded="false" />
+                <element signature="e#2484#2485#0" expanded="true" />
+                <element signature="e#2523#2917#0" expanded="true" />
+                <element signature="e#2916#2917#0" expanded="true" />
+                <element signature="e#3068#3069#0" expanded="false" />
+                <element signature="e#3150#3151#0" expanded="false" />
+                <element signature="e#3316#3317#0" expanded="false" />
+                <element signature="e#3398#3399#0" expanded="false" />
+                <element signature="e#3454#3624#0" expanded="true" />
+                <element signature="e#3564#3565#0" expanded="false" />
+                <element signature="e#3613#3614#0" expanded="false" />
+                <element signature="e#3623#3624#0" expanded="true" />
+                <element signature="e#3668#3831#0" expanded="true" />
+                <element signature="e#3778#3779#0" expanded="false" />
+                <element signature="e#3820#3821#0" expanded="false" />
+                <element signature="e#3830#3831#0" expanded="true" />
+                <marker date="1490888275000" expanded="true" signature="101:468" ph="..." />
               </folding>
             </state>
           </provider>
@@ -205,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/highdice.java" />
         <option value="$PROJECT_DIR$/src/Dice.java" />
         <option value="$PROJECT_DIR$/src/main/java/DiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dice.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Dice.java" />
       </list>
     </option>
   </component>
@@ -791,32 +761,33 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1299#1811#0" expanded="true" />
-            <element signature="e#1471#1479#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1861#2030#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="false" />
-            <element signature="e#2019#2020#0" expanded="false" />
-            <element signature="e#2029#2030#0" expanded="true" />
-            <element signature="e#2076#2241#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="false" />
-            <element signature="e#2230#2231#0" expanded="false" />
-            <element signature="e#2240#2241#0" expanded="true" />
-            <element signature="e#2279#2673#0" expanded="true" />
-            <element signature="e#2672#2673#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="false" />
-            <element signature="e#2906#2907#0" expanded="false" />
-            <element signature="e#3072#3073#0" expanded="false" />
-            <element signature="e#3154#3155#0" expanded="false" />
-            <element signature="e#3210#3380#0" expanded="true" />
-            <element signature="e#3320#3321#0" expanded="false" />
-            <element signature="e#3369#3370#0" expanded="false" />
-            <element signature="e#3379#3380#0" expanded="true" />
-            <element signature="e#3424#3587#0" expanded="true" />
-            <element signature="e#3534#3535#0" expanded="false" />
-            <element signature="e#3576#3577#0" expanded="false" />
-            <element signature="e#3586#3587#0" expanded="true" />
-            <marker date="1490887889000" expanded="true" signature="7:336" ph="..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1543#2055#0" expanded="true" />
+            <element signature="e#1715#1723#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2105#2274#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2320#2485#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="false" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2523#2917#0" expanded="true" />
+            <element signature="e#2916#2917#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="false" />
+            <element signature="e#3150#3151#0" expanded="false" />
+            <element signature="e#3316#3317#0" expanded="false" />
+            <element signature="e#3398#3399#0" expanded="false" />
+            <element signature="e#3454#3624#0" expanded="true" />
+            <element signature="e#3564#3565#0" expanded="false" />
+            <element signature="e#3613#3614#0" expanded="false" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3668#3831#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="false" />
+            <element signature="e#3820#3821#0" expanded="false" />
+            <element signature="e#3830#3831#0" expanded="true" />
+            <marker date="1490888275000" expanded="true" signature="101:468" ph="..." />
           </folding>
         </state>
       </provider>
@@ -863,32 +834,33 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1299#1811#0" expanded="true" />
-            <element signature="e#1471#1479#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1861#2030#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="false" />
-            <element signature="e#2019#2020#0" expanded="false" />
-            <element signature="e#2029#2030#0" expanded="true" />
-            <element signature="e#2076#2241#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="false" />
-            <element signature="e#2230#2231#0" expanded="false" />
-            <element signature="e#2240#2241#0" expanded="true" />
-            <element signature="e#2279#2673#0" expanded="true" />
-            <element signature="e#2672#2673#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="false" />
-            <element signature="e#2906#2907#0" expanded="false" />
-            <element signature="e#3072#3073#0" expanded="false" />
-            <element signature="e#3154#3155#0" expanded="false" />
-            <element signature="e#3210#3380#0" expanded="true" />
-            <element signature="e#3320#3321#0" expanded="false" />
-            <element signature="e#3369#3370#0" expanded="false" />
-            <element signature="e#3379#3380#0" expanded="true" />
-            <element signature="e#3424#3587#0" expanded="true" />
-            <element signature="e#3534#3535#0" expanded="false" />
-            <element signature="e#3576#3577#0" expanded="false" />
-            <element signature="e#3586#3587#0" expanded="true" />
-            <marker date="1490887889000" expanded="true" signature="7:336" ph="..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1543#2055#0" expanded="true" />
+            <element signature="e#1715#1723#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2105#2274#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2320#2485#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="false" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2523#2917#0" expanded="true" />
+            <element signature="e#2916#2917#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="false" />
+            <element signature="e#3150#3151#0" expanded="false" />
+            <element signature="e#3316#3317#0" expanded="false" />
+            <element signature="e#3398#3399#0" expanded="false" />
+            <element signature="e#3454#3624#0" expanded="true" />
+            <element signature="e#3564#3565#0" expanded="false" />
+            <element signature="e#3613#3614#0" expanded="false" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3668#3831#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="false" />
+            <element signature="e#3820#3821#0" expanded="false" />
+            <element signature="e#3830#3831#0" expanded="true" />
+            <marker date="1490888275000" expanded="true" signature="101:468" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1278,35 +1250,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="225" column="47" lean-forward="false" selection-start-line="225" selection-start-column="47" selection-end-line="225" selection-end-column="47" />
           <folding>
-            <element signature="e#1299#1811#0" expanded="true" />
-            <element signature="e#1471#1479#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1861#2030#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="false" />
-            <element signature="e#2019#2020#0" expanded="false" />
-            <element signature="e#2029#2030#0" expanded="true" />
-            <element signature="e#2076#2241#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="false" />
-            <element signature="e#2230#2231#0" expanded="false" />
-            <element signature="e#2240#2241#0" expanded="true" />
-            <element signature="e#2279#2673#0" expanded="true" />
-            <element signature="e#2672#2673#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="false" />
-            <element signature="e#2906#2907#0" expanded="false" />
-            <element signature="e#3072#3073#0" expanded="false" />
-            <element signature="e#3154#3155#0" expanded="false" />
-            <element signature="e#3210#3380#0" expanded="true" />
-            <element signature="e#3320#3321#0" expanded="false" />
-            <element signature="e#3369#3370#0" expanded="false" />
-            <element signature="e#3379#3380#0" expanded="true" />
-            <element signature="e#3424#3587#0" expanded="true" />
-            <element signature="e#3534#3535#0" expanded="false" />
-            <element signature="e#3576#3577#0" expanded="false" />
-            <element signature="e#3586#3587#0" expanded="true" />
-            <marker date="1490887889000" expanded="true" signature="7:336" ph="..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1543#2055#0" expanded="true" />
+            <element signature="e#1715#1723#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
+            <element signature="e#2105#2274#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="false" />
+            <element signature="e#2263#2264#0" expanded="false" />
+            <element signature="e#2273#2274#0" expanded="true" />
+            <element signature="e#2320#2485#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="false" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2523#2917#0" expanded="true" />
+            <element signature="e#2916#2917#0" expanded="true" />
+            <element signature="e#3068#3069#0" expanded="false" />
+            <element signature="e#3150#3151#0" expanded="false" />
+            <element signature="e#3316#3317#0" expanded="false" />
+            <element signature="e#3398#3399#0" expanded="false" />
+            <element signature="e#3454#3624#0" expanded="true" />
+            <element signature="e#3564#3565#0" expanded="false" />
+            <element signature="e#3613#3614#0" expanded="false" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3668#3831#0" expanded="true" />
+            <element signature="e#3778#3779#0" expanded="false" />
+            <element signature="e#3820#3821#0" expanded="false" />
+            <element signature="e#3830#3831#0" expanded="true" />
+            <marker date="1490888275000" expanded="true" signature="101:468" ph="..." />
           </folding>
         </state>
       </provider>
