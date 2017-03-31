@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: xmlbeans-2.6.0.jar hamcrest-core-1.3.jar commons-codec-1.9
+ .jar poi-3.11.jar poi-ooxml-3.11.jar stax-api-1.0.1.jar junit-4.12.ja
+ r hamcrest-core-1.3.jar junit-4.12.jar poi-ooxml-schemas-3.11.jar
+Main-Class: Dice
+
