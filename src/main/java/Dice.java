@@ -39,13 +39,15 @@ public class Dice extends JPanel{
     private JButton addPlayerButton;
     private JButton rollDiceButton;
     private JLabel rollPoints;
+    private JButton loadButton;
+    private JButton button2;
 
     private static XSSFWorkbook workBook;
     private static Sheet workSheet;
 
     public static void main(String[] args) throws IOException {
-        loadFile("gamedata.xlsx");
-        players = loadPlayers(workSheet);
+       // loadFile("gamedata.xlsx");
+       // players = loadPlayers(workSheet);
         Dice game = new Dice();
         game.setBoard();
     }
@@ -114,6 +116,13 @@ public class Dice extends JPanel{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 rollDice();
+            }
+        });
+        loadButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                loadFile("gamedata.xlsx");
+                players = loadPlayers(workSheet);
+                setCurrent();
             }
         });
     }
