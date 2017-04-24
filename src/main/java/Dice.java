@@ -45,14 +45,6 @@ public class Dice extends JPanel{
     private static XSSFWorkbook workBook;
     private static Sheet workSheet;
 
-    public static void main(String[] args) throws IOException {
-       // loadFile("gamedata.xlsx");
-       // players = loadPlayers(workSheet);
-        Dice game = new Dice();
-        game.setBoard();
-    }
-
-
     public Dice() {
         playerIndex = 0;
 
@@ -203,7 +195,7 @@ public class Dice extends JPanel{
 
         JFrame frame = new JFrame("App");
         frame.setContentPane(new Dice().rootPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
         playerName.setText(currentPlayer.getPlayerName());
