@@ -82,7 +82,7 @@
             </constraints>
             <properties>
               <actionCommand value="Run Stats"/>
-              <text value="Export Stats To File"/>
+              <text value="Run Stats"/>
             </properties>
           </component>
           <component id="e16dc" class="javax.swing.JButton" binding="addPlayerButton" default-binding="true">
