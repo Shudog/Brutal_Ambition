@@ -246,7 +246,7 @@ public class Dice extends JPanel{
             String rolls = "";
             for(int j: players.get(i).getRolls())
             {
-                rolls += i + "/";
+                rolls += Integer.toString(j) + "/";
             }
             workSheet.getRow(5).getCell(i+1).setCellValue(rolls);
         }

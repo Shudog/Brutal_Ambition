@@ -4,6 +4,7 @@
     <list default="true" id="abeedc96-f124-4cf0-9ce3-5086f9680d6e" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/~$gamedata.xlsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gamedata.xlsx" afterPath="$PROJECT_DIR$/gamedata.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dice.java" afterPath="$PROJECT_DIR$/src/main/java/Dice.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,8 +52,8 @@
       <file leaf-file-name="Dice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-146">
-              <caret line="222" column="25" lean-forward="false" selection-start-line="222" selection-start-column="25" selection-end-line="222" selection-end-column="25" />
+            <state relative-caret-position="244">
+              <caret line="248" column="31" lean-forward="false" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1589#1590#0" expanded="true" />
@@ -191,7 +192,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-36" />
+    <option name="y" value="60" />
     <option name="width" value="1440" />
     <option name="height" value="749" />
   </component>
@@ -559,7 +561,7 @@
     <option name="totallyTimeSpent" value="18045000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="749" extended-state="0" />
+    <frame x="-36" y="60" width="1440" height="749" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -813,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-146">
-          <caret line="222" column="25" lean-forward="false" selection-start-line="222" selection-start-column="25" selection-end-line="222" selection-end-column="25" />
+        <state relative-caret-position="244">
+          <caret line="248" column="31" lean-forward="false" selection-start-line="248" selection-start-column="31" selection-end-line="248" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1589#1590#0" expanded="true" />
