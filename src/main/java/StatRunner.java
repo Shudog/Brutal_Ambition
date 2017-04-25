@@ -35,7 +35,10 @@ public class StatRunner {
 
         for (Player i: players)
         {
-            sum += i.getTotalPoints();
+            for (int j : i.getRolls())
+            {
+                sum += j;
+            }
         }
 
         return sum;
