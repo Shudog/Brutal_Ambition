@@ -228,7 +228,7 @@ public class Dice extends JPanel{
 
                 workBook = new XSSFWorkbook(inputStream);
                 workSheet = workBook.getSheetAt(0);
-                JOptionPane.showMessageDialog(null, "File loaded");
+                JOptionPane.showMessageDialog(null, "File saved");
             }
             else
                 JOptionPane.showMessageDialog(null, "File cannot be found");
