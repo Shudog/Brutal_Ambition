@@ -20,7 +20,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * Created by NS12379 on 3/13/2017.
  */
 public class Dice extends JPanel{
-    private static ArrayList<Player> players = new ArrayList<Player>();
+    private static ArrayList<Player> players = new ArrayList<>();
     private static Player currentPlayer;
     private Integer playerIndex;
 
@@ -40,7 +40,7 @@ public class Dice extends JPanel{
     private JButton rollDiceButton;
     private JLabel rollPoints;
     private JButton loadButton;
-    private JButton button2;
+    private JButton saveToFileButton;
 
     private static XSSFWorkbook workBook;
     private static Sheet workSheet;
@@ -51,15 +51,7 @@ public class Dice extends JPanel{
         setPlayersButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ArrayList<Player> newPlayers = new ArrayList<Player>();
-                Player john = new Player("John");
-                Player alex = new Player("Alex");
-                Player balo = new Player("Balo");
-                newPlayers.add(john);
-                newPlayers.add(alex);
-                newPlayers.add(balo);
-
-                addPlayers(newPlayers);
+                runStats();
             }
         });
         previousPlayerButton.addActionListener(new ActionListener() {
@@ -242,9 +234,28 @@ public class Dice extends JPanel{
             p.setGamesPlayed((int) sheet.getRow(2).getCell(i).getNumericCellValue());
             p.setWins((int) sheet.getRow(3).getCell(i).getNumericCellValue());
             p.setLosses((int) sheet.getRow(4).getCell(i).getNumericCellValue());
+            String[] s = sheet.getRow(5).getCell(i).toString().split("/");
+            ArrayList<Integer> z = new ArrayList<>();
+            for(String x : s)
+            {
+                z.add(Integer.parseInt(x));
+            }
+            p.setRolls(z);
             myplayers.add(p);
         }
         currentPlayer = myplayers.get(0);
         return myplayers;
+    }
+
+    public void runStats()
+    {
+        if (!players.isEmpty()) {
+            StatRunner s = new StatRunner(players);
+            JOptionPane.showMessageDialog(null, s.runEm());
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null, "No data to do stats on.");
+        }
     }
 }

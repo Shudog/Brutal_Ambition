@@ -1,4 +1,5 @@
 import java.io.File;
+import java.util.ArrayList;
 
 /**
  * Created by Jasper on 2/7/2017.
@@ -12,6 +13,16 @@ public class Player {
     private int gamesPlayed;
     private int totalPoints;
     private int currentPoints;
+
+    public ArrayList<Integer> getRolls() {
+        return rolls;
+    }
+
+    public void setRolls(ArrayList<Integer> rolls) {
+        this.rolls = rolls;
+    }
+
+    private ArrayList<Integer> rolls = new ArrayList<>();
 
     public Player() {
         this.name = "";
@@ -50,6 +61,7 @@ public class Player {
     public void addPoints(int roll) {
         this.currentPoints += roll;
         this.totalPoints += roll;
+        rolls.add(roll);
     }
 
     public void playerPlaysNewGame() {
