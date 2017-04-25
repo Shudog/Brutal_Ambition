@@ -111,7 +111,7 @@ public class Dice extends JPanel{
         saveToFileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                saveFile();
             }
         });
     }
@@ -221,8 +221,6 @@ public class Dice extends JPanel{
     public static void saveFile()
     {
         File data = null;
-        if(workSheet == null)
-        {
             try {
                 data = new File("gamedata.xlsx");
             if(data.exists()) {
@@ -237,7 +235,7 @@ public class Dice extends JPanel{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        }
+
         for(int i = 0; i < players.size(); i++)
         {
             workSheet.getRow(0).getCell(i+1).setCellValue(players.get(i).getPlayerName());
