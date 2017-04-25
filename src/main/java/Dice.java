@@ -1,3 +1,5 @@
+import com.sun.codemodel.internal.JOp;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -8,11 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.*;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -107,6 +106,12 @@ public class Dice extends JPanel{
                 loadFile("gamedata.xlsx");
                 players = loadPlayers(workSheet);
                 setCurrent();
+            }
+        });
+        saveToFileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }
@@ -213,12 +218,64 @@ public class Dice extends JPanel{
         rootPanel.setVisible(true);
     }
 
+    public static void saveFile()
+    {
+        File data = null;
+        if(workSheet == null)
+        {
+            try {
+                data = new File("gamedata.xlsx");
+            if(data.exists()) {
+                FileInputStream inputStream = new FileInputStream(data);
+
+                workBook = new XSSFWorkbook(inputStream);
+                workSheet = workBook.getSheetAt(0);
+                JOptionPane.showMessageDialog(null, "File loaded");
+            }
+            else
+                JOptionPane.showMessageDialog(null, "File cannot be found");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        }
+        for(int i = 0; i < players.size(); i++)
+        {
+            workSheet.getRow(0).getCell(i+1).setCellValue(players.get(i).getPlayerName());
+            workSheet.getRow(1).getCell(i+1).setCellValue(players.get(i).getTotalPoints());
+            workSheet.getRow(2).getCell(i+1).setCellValue(players.get(i).getGamesPlayed());
+            workSheet.getRow(3).getCell(i+1).setCellValue(players.get(i).getPlayerWins());
+            workSheet.getRow(4).getCell(i+1).setCellValue(players.get(i).getLosses());
+            String rolls = "";
+            for(int j: players.get(i).getRolls())
+            {
+                rolls += i + "/";
+            }
+            workSheet.getRow(5).getCell(i+1).setCellValue(rolls);
+        }
+        try {
+            FileOutputStream out = new FileOutputStream(data);
+            workBook.write(out);
+            workBook.close();
+        }
+        catch (IOException e)
+        {
+
+        }
+
+    }
     public static void loadFile(String path)
     {
         try {
-            FileInputStream inputStream = new FileInputStream(new File(path));
-            workBook = new XSSFWorkbook(inputStream);
-            workSheet = workBook.getSheetAt(0);
+            File data = new File(path);
+            if(data.exists()) {
+                FileInputStream inputStream = new FileInputStream(data);
+
+                workBook = new XSSFWorkbook(inputStream);
+                workSheet = workBook.getSheetAt(0);
+                JOptionPane.showMessageDialog(null, "File loaded");
+            }
+            else
+                JOptionPane.showMessageDialog(null, "File cannot be found");
         } catch (IOException e) {
             e.printStackTrace();
         }
